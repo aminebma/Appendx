@@ -10,6 +10,7 @@ body{
     grid-template-columns: 20% auto 20%;
     height: 100%;
     background:white; 
+    
 }
 #rightbar{
     display: grid;
@@ -29,12 +30,38 @@ body{
     background:white;
 }
 
-.logo{
+ .mainLogo{
     margin: auto;
-    width: 30%;
+    width: 50%;
     height: 30%;
 }
 
+.logo{
+    margin: auto;
+    width: 50%;
+    height: 50%;}
+
+#rightbar .logo{
+    margin: auto;
+    height: 100%;
+    width:100%;
+    margin-top: 5%;
+    display: inline;
+}
+
+
+
+.profilePic{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+
+.profilePic img {
+    
+    box-shadow: 0px 0px 20px  rgba(00, 0, 0, 0.16) ;
+    border-radius: 50%; 
+}
 .logo img{
     margin: auto;
    width: 100%;
@@ -43,6 +70,7 @@ body{
 .logo h1{
     font-size: 120%;
     text-align: center;
+    padding: 0;
 }
 div.liste {
     display : grid ;
@@ -68,9 +96,6 @@ div.liste button{
     height: 100%;
     width: 100%;
 }
-.profilePic{
-    border-radius: 50%;
-}
 h2{
     text-align: center;
 }
@@ -87,32 +112,47 @@ h2{
 }
 
 .notification h2 {
-    color: white;
+    position: relative;
+ font-size: 100%;
+ color: white;
  grid-row-gap: 2 ;
  margin:auto;
  padding: auto;
  height: 100%;
  width: 100%;
+ top : 100%;
  text-align: center;
 }
 
 .notification h1{
-    color: white;
+color: white;
  grid-column-start: 2;    
  grid-row-start: 1;
+ font-size: 100%;
+ margin: 0;
+ margin-top: 10%;
 }
 
 .notification p{
-    color: white;
+ color: white;
  grid-column-start: 2;  
  grid-row-start: 2;
+ font-size: 100%;
 }
 
 
-body H1 {
-    margin : 10%;
+#FeedTitle {
+    margin-top : 5%;
+    margin-bottom : 5%;
+    margin-inline-start : 10%; 
     font-weight: bolder;
 }
+
+main{
+    overflow: scroll;
+}
+
+
 .listeActivities{
     margin: 10%; 
     background: rgb(240, 240, 240);
@@ -120,3 +160,13 @@ body H1 {
     height: 100%;
     box-shadow: 0px 0px 20px rgba(00, 0, 0, 0.16) ;
 }
+
+.Activity{
+    width: 70%;
+    height: 40%;
+    margin: auto;
+    background: white;
+    box-shadow: 0px 0px 20px rgba(00, 0, 0, 0.16) ;
+    margin-bottom: 5%; 
+}
+

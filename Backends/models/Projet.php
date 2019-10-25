@@ -13,7 +13,6 @@
     public $description;
     public $pays;
     public $ville;
-    public $is_remunere;
     // Constructor with DB
     public function __construct($db) {
      $this->conn = $db;
@@ -61,14 +60,13 @@
             $this->description = $row['description'];
             $this->pays = $row['pays'];
             $this->ville = $row['ville'];
-            $this->is_remunere = $row['is_remunere'];
         }
 
         // Create admin
         public function create() {
           // Create Query
           $query = 'INSERT INTO ' .
-            $this->table . '(user_id , title,description, pays, ville, is_remunere) VALUES(?,?,?,?,?,?)';
+            $this->table . '(user_id , title,description, pays, ville ) VALUES(?,?,?,?,?)';
         // Prepare Statement
         $stmt = $this->conn->prepare($query);
         // Clean data
@@ -83,7 +81,6 @@
         $stmt-> bindParam('3', $this->description);
         $stmt-> bindParam('4', $this->pays);
         $stmt-> bindParam('5', $this->ville);
-        $stmt-> bindParam('6', $this->is_remunere);
         // Execute query
         if($stmt->execute()) {
           return true;

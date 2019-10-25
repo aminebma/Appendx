@@ -13,7 +13,7 @@ include_once "../../models/User.php";
 //  DB & connect
 $Database = new Database();
 $db = $Database->connect();
-$User = new Utilisateur($db);
+$User = new user($db);
 
 $data = json_decode(file_get_contents('php://input'));
 

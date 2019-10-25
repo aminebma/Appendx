@@ -5,26 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="Style/Style.css" >
     <script src="Scripts/*" ></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header >
-        
-    </header>
-    <nav id="mainnav">
+    <div id="leftbar">
+        <div class="logo">
+            <img class="mainLogo" src="resources/ApendxBlack.png">
+            <h1>Append X</h1>
+            </div>
+            <div class="liste">
+                <button>Discover</button>
+                <button>My Activities</button>
+                <button>Settings</button>
+                <button>Preferences</button>
+                <button>Policy</button>
+            </div>
+            <div>
+                
+            </div>
 
-    </nav>
-    
+    </div>
     
     <main id="body">
+        <H1 id="FeedTitle">My Activities</H1>
+        <button class="buttonFloat" onclick="AddActivity();">
+            + Create Acivity</button>
+        <div class="Activity">
+            <h1>App developpment</h1>
+            <p>Descritpion</p>
+            <h1>Participants:</h1>
+            <p>Details</p>
+            <p>done on 28/10/2019</p>
+        </div>
 
+        <div class="Activity">
+            <h1>Hiking journey</h1>
+            <p>Descritpion</p>
+        </div>
 
     </main>
 
+    <div id="rightbar">
+        <div class="logo">
+            <div  class="profilePic">
+                <img src="resources/ApendXWhite_1.png">
+            </div>
+            <h1>Benbakhta Mohamed Amine</h1>
+        </div>
+        <h2>Notifications</h2>
 
-    <footer>
+        <div class="listNotif">
+            
+            <div class="notification">
+                <h2>12:00</h2>
+                <h1>App developpment</h1>
+                <p>A partner has joined your team</p>
 
-    </footer>
+            </div>
+            
+            <div class="notification">
+                <h2>12:00</h2>
+                <h1>App developpment</h1>
+                <p>A partner has joined your team</p>
+
+            </div>
+            
+            <div class="notification" style="background :#92C2D8">
+                <h2>12:00</h2>
+                <h1>App developpment</h1>
+                <p>A partner has joined your team</p>
+
+            </div>
+            
+            <div class="notification" style="background :#596A72">
+                <h2>12:00</h2>
+                <h1>App developpment</h1>
+                <p>A partner has joined your team</p>
+
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>

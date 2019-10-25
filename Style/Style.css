@@ -1,4 +1,214 @@
-html{
+html,*{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(97, 97, 97);
+    transition: ease-in-out 0.3ms;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    height: 100%;
+    background:white; 
+    
+}
+#rightbar{
+    display: grid;
+    grid-template-rows: 25% 5% 60% 10%;
+    box-shadow: 0px 0px 20px  rgba(00, 0, 0, 0.16) ;
+    height: 100%;
+    width: 100%;
+    background:white;
+}
+
+#leftbar{
+    display: grid;
+    grid-template-rows: 25% 55% 20%;
+    box-shadow: 0px 0px 20px rgba(00, 0, 0, 0.16) ;
+    height: 100%;
+    width: 100%;
+    background:white;
+}
+
+ .mainLogo{
+    margin: auto;
+    width: 50%;
+    height: 30%;
+}
+
+.logo{
+    margin: auto;
+    width: 50%;
+    height: 50%;}
+
+#rightbar .logo{
+    margin: auto;
+    height: 100%;
+    width:100%;
+    margin-top: 5%;
+    display: inline;
+}
+
+
+
+.profilePic{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+
+.profilePic img {
+    
+    box-shadow: 0px 0px 20px  rgba(00, 0, 0, 0.16) ;
+    border-radius: 50%; 
+}
+.logo img{
+    margin: auto;
+   width: 100%;
+   height: 100%;
+}
+.logo h1{
+    font-size: 120%;
+    text-align: center;
+    padding: 0;
+}
+div.liste {
+    display : grid ;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20% ;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+div.liste button{
+    margin: 0;
+    text-align: start;
+    padding-left: 25%; 
+    background: white;
+    font-size: 100%;
+    font-weight: bolder;
+    border: 0ch;
+}
+div.liste button:hover{
+    background: #596A72;
+    color: white ;
+    box-shadow: 0px 0px 20px rgba(00, 0, 0, 0.16) ;
+}
+
+.listNotif{
+    height: 100%;
+    width: 100%;
+}
+h2{
+    text-align: center;
+}
+.notification{
+    border-radius: 1pc;
+    background: #BE8E78;
+    width: 90%;
+    height: 18%;
+    margin: 5%;
+    box-shadow: 0px 0px 20px rgba(00, 0, 0, 0.16) ;
+    display : grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 40% 60%;
+}
+
+.notification h2 {
+    position: relative;
+ font-size: 100%;
+ color: white;
+ grid-row-gap: 2 ;
+ margin:auto;
+ padding: auto;
+ height: 100%;
+ width: 100%;
+ top : 100%;
+ text-align: center;
+}
+
+.notification h1{
+color: white;
+ grid-column-start: 2;    
+ grid-row-start: 1;
+ font-size: 100%;
+ margin: 0;
+ margin-top: 10%;
+}
+
+.notification p{
+ color: white;
+ grid-column-start: 2;  
+ grid-row-start: 2;
+ font-size: 100%;
+}
+
+
+#FeedTitle {
+    margin-top : 5%;
+    margin-bottom : 5%;
+    margin-inline-start : 15%; 
+    font-weight: bolder;
+    color: white;
+}
+
+main{
+    overflow: scroll;
+    background : rgba(89, 106, 114, 0.39);
+   
+}
+
+ main::-webkit-scrollbar { width: 0 !important }
+
+.listeActivities{
+    margin: 10%; 
+    background: rgb(240, 240, 240);
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 20px rgba(00, 0, 0, 0.16) ;
+}
+
+.Activity{ 
+    display: block;
+    width: 70%;
+    height: 50%;
+    margin: auto;
+    background: white;
+    box-shadow: 0px 0px 20px rgba(00, 0, 0, 0.16) ;
+    margin-bottom: 5%; 
+}
+
+.Activity h1{
+    position: relative;
+    top: 5%;
+    text-align: left;
+    margin: auto;
+    margin : 5%;
+}
+
+.Activity p{
+    
+    margin: auto;
+    margin : 5%;
+}
+
+.buttonFloat{
+    position: absolute;
+    right: 22%;
+    bottom: 5%;
+    background: #92C2D8;
+    color: white;
+    padding: 1%;
+    border-radius:5px; 
+    border: none;
+    font-weight: bolder;
+    font-size: 100%;
+    box-shadow: 0px 0px 20px rgba(00, 0, 0, 0.16) ;
+   
+}
+.buttonFloat:hover {
+    background: #596A72;
 }

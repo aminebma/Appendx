@@ -1,0 +1,22 @@
+{
+  "name": "appendx",
+  "version": "1.0.0",
+  "description": "Append X est une plateforme web visant à briser les différences et favoriser l’inclusion en regroupant différentes personnes anonymement afin de réaliser des projets, organiser des events...etc",
+  "main": "app.js",
+  "scripts": {
+    "test": " \"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aminebma/Appendx.git"
+  },
+  "keywords": [
+    "appendx"
+  ],
+  "author": "shifters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aminebma/Appendx/issues"
+  },
+  "homepage": "https://github.com/aminebma/Appendx#readme"
+}

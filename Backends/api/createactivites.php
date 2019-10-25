@@ -46,10 +46,12 @@ var_dump($data);
                               if (empty($data->{'tags'})){
                                 $joincomp = new joincomp($db);
                                 $var{'id'}=$joincomp->read_singlee();
+  }else {
+
+    
 
 
-
-                              }
+  }
                             } else {
                               echo json_encode(
                                 array('message' => "Le projet n'est pas lancée")

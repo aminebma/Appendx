@@ -26,16 +26,19 @@ public function read_singlee(){
     // Bind ID
     $this->id = htmlspecialchars(strip_tags($this->id));
     $this->nom = htmlspecialchars(strip_tags($this->nom));
-    $stmt->bindParam('1', $this->id);
-    $stmt->bindParam('2', $this->nom);
-    echo "$this->nom";
-    echo "$this->id";
+
+
 
     // Execute query
-    $stmt->execute();
-    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    $stat=$stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    return   $row['id'];
+   // set properties
+   return json_encode($stat);
+
 }
-}
+
+
+
+
+
  ?>

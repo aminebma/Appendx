@@ -15,12 +15,12 @@ class Selectrandom {
    $this->conn = $db;
 }
 public function Selectrandom(){
-  $var=leadership ;
-  if ($var==leadership) {
+  $var=design ;
+  if ($var==design) {
     $query = 'SELECT user_id
         FROM
           ' . $this->table1 . '
-      WHERE designation == leadership
+      WHERE designation == design
       LIMIT 0,1';
       //Prepare statement
       $stmt = $this->conn->prepare($query);

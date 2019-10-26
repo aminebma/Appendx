@@ -48,7 +48,7 @@ var_dump($data);
                                 $var{'id'}=$joincomp->read_singlee();
   }else {
 
-    
+
 
 
   }
